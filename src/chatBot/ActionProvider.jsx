@@ -1,6 +1,11 @@
 import React from "react";
 
-const ActionProvider = ({ createChatBotMessage, setState, children }) => {
+const ActionProvider = ({
+  createChatBotMessage,
+  setState,
+  children,
+  ...rest
+}) => {
   const categoriesSelection = (data) => {
     const message = createChatBotMessage(
       `There is Some Questions that may releated to ${data?.name}. `,
