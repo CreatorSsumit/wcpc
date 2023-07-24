@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <div style={{ width: "auto", height: "100vh", overflow: "hidden" }}>
+      <iframe
+        style={{ width: "100vw", height: "100vh" }}
+        src="https://www.wcpc.us/"
+      />
+
+      <App />
+    </div>
   </React.StrictMode>
 );
 
