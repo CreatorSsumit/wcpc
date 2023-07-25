@@ -8,7 +8,7 @@ const ActionProvider = ({
 }) => {
   const categoriesSelection = (data) => {
     const message = createChatBotMessage(
-      `There is Some Questions that may releated to ${data?.name}. `,
+      `There is some questions that may releated to ${data?.name}. `,
       { widget: "filterQuestion", payload: data }
     );
 
@@ -20,8 +20,9 @@ const ActionProvider = ({
   };
 
   const answerSelection = (data) => {
+    console.log(data);
     const message = createChatBotMessage(
-      `There is Answer of your Questions : - ${data?.question}`,
+      `There is Answer of your Questions : - ${data?.name || data?.question}`,
       { widget: "filterAnswer", payload: data }
     );
 

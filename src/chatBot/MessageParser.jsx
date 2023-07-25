@@ -4,7 +4,7 @@ import React from "react";
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     // if (message.includes("hello")) {
-    actions?.answerSelection({ question: message });
+    actions?.categoriesSelection({ name: message });
     // }
   };
 
