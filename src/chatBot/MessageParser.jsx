@@ -1,11 +1,13 @@
 // in MessageParser.jsx
 import React from "react";
 
-const MessageParser = ({ children, actions }) => {
+const MessageParser = ({ children, actions, createChatBotMessage }) => {
   const parse = (message) => {
-    // if (message.includes("hello")) {
-    actions?.categoriesSelection({ name: message });
-    // }
+    if (["hello", "menu"].includes(message?.trim().toLowerCase())) {
+      actions?.categoriesList();
+    } else {
+      actions?.categoriesSelection({ name: message });
+    }
   };
 
   return (

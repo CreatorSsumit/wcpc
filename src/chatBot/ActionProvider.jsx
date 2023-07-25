@@ -6,6 +6,18 @@ const ActionProvider = ({
   children,
   ...rest
 }) => {
+  const categoriesList = () => {
+    const message = createChatBotMessage(
+      `How can I help you? Below are some possible options.`,
+      { widget: "categories" }
+    );
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev?.messages, message],
+    }));
+  };
+
   const categoriesSelection = (data) => {
     const message = createChatBotMessage(
       `There is some questions that may releated to ${data?.name}. `,
@@ -37,6 +49,7 @@ const ActionProvider = ({
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, {
           actions: {
+            categoriesList,
             categoriesSelection,
             answerSelection,
           },
