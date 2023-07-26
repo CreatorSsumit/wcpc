@@ -2,9 +2,7 @@
 import React, { useState } from "react";
 import { questionList } from "./questionsList";
 
-const MessageParser = ({ children, actions, createChatBotMessage }) => {
-  const [filterAnswerByQuestions, setfilterAnswerByQuestions] = useState([]);
-
+const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     if (["hello", "menu"].includes(message?.trim().toLowerCase())) {
       actions?.categoriesList();
@@ -55,8 +53,6 @@ const MessageParser = ({ children, actions, createChatBotMessage }) => {
       }
     }
   };
-
-  console.log(filterAnswerByQuestions);
 
   return (
     <div>
