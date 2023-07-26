@@ -34,7 +34,21 @@ const MessageParser = ({ children, actions }) => {
             -1
       );
 
-      if (filterByCategories && filterByCategories?.length !== 0) {
+      if (
+        filterByCategories &&
+        filterByCategories?.length !== 0 &&
+        allQuestionByText &&
+        allQuestionByText?.length !== 0
+      ) {
+        actions?.categoriesSelection({
+          name: message,
+          questions: [...filterByCategories?.questions, ...allQuestionByText],
+        });
+      } else if (
+        !allQuestionByText &&
+        filterByCategories &&
+        filterByCategories?.length !== 0
+      ) {
         actions?.categoriesSelection({
           name: message,
           questions: filterByCategories?.questions,

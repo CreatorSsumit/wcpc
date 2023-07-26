@@ -57,6 +57,44 @@ const questionList = {
         },
       ],
     },
+    {
+      name: "Case Status and Updates",
+      questions: [
+        {
+          question: "How can I check the status of my ongoing probate case?",
+          answer:
+            "To check the status of an ongoing probate case, you can visit our website's `Case Status` section and enter the relevant case details.",
+        },
+        {
+          question: "Are case updates and notifications available online?",
+          answer:
+            "Registered users can sign up for email notifications to receive updates on their cases, including court dates and changes in case status.",
+        },
+        {
+          question:
+            "Can I receive alerts or reminders about upcoming court dates and deadlines?",
+          answer:
+            "Our automated system can send reminders about upcoming court dates and important deadlines. Ensure you provide a valid email address during case filing.",
+        },
+      ],
+    },
+    {
+      name: "Contact and Support",
+      questions: [
+        {
+          question:
+            "Can you connect me with a court clerk or staff member for further assistance?",
+          answer:
+            "For further assistance, you can contact our court clerks during business hours at [Insert Contact Information].",
+        },
+        {
+          question:
+            "How can I get in touch with the Probate Court for specific inquiries?",
+          answer:
+            "If you have specific inquiries about your case or need additional information, feel free to reach out to us via email at [Insert Email Address].",
+        },
+      ],
+    },
   ],
 };
 
