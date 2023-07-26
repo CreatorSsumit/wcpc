@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Space } from "antd";
 
-function FilterQuestion({ payload, actionProvider, state, ...rest }) {
+function FilterQuestion({ payload, actionProvider, state, action, ...rest }) {
   const [filterAnswerByQuestions, setfilterAnswerByQuestions] = useState([]);
 
   useEffect(() => {
@@ -36,15 +36,19 @@ function FilterQuestion({ payload, actionProvider, state, ...rest }) {
 
     if (filterByCategories && filterByCategories?.length !== 0) {
       setfilterAnswerByQuestions(filterByCategories?.questions);
-    } else {
+    } else if (
+      !filterByCategories &&
+      allQuestionByText &&
+      allQuestionByText?.length !== 0
+    ) {
       setfilterAnswerByQuestions(allQuestionByText);
+    } else {
     }
-  }, [payload]);
+  }, []);
 
   return (
     <div style={{ textAlign: "end" }}>
       {filterAnswerByQuestions?.map((e, i) => {
-        console.log(e);
         return (
           <>
             <Button
