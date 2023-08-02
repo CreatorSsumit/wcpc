@@ -1,12 +1,10 @@
 // in the config
 import React from "react";
 import { createChatBotMessage, createCustomMessage } from "react-chatbot-kit";
-import Categories from "./Categories";
-import FilterQuestion from "./categories/filterQuestion";
-import { questionList } from "./questionsList";
-import FilterAnswer from "./categories/filterAnswer";
+import QuestionList from "./QuestionList";
+import { faqQuestion } from "./faqQuestion";
 
-const botName = "DocsBot";
+const botName = "Wayne";
 
 const config = {
   botName: botName,
@@ -20,26 +18,15 @@ const config = {
     },
   },
 
-  state: { ...questionList, selectedCategories: "" },
+  state: { faqQuestion, selectedCategories: "" },
   widgets: [
     {
-      widgetName: "categories",
-      widgetFunc: (props) => <Categories {...props} />,
-    },
-    {
-      widgetName: "filterQuestion",
-      widgetFunc: (props) => <FilterQuestion {...props} />,
-    },
-    {
-      widgetName: "filterAnswer",
-      widgetFunc: (props) => <FilterAnswer {...props} />,
+      widgetName: "getAllQuestions",
+      widgetFunc: (props) => <QuestionList {...props} />,
     },
   ],
   initialMessages: [
-    createChatBotMessage(`Hi I'm ${botName}. I’m here to help you .`),
-    createChatBotMessage(`Please Look into our categories for better help .`, {
-      widget: "categories",
-    }),
+    createChatBotMessage(`"Hi, I'm ${botName}. How can I assist you today?"`),
   ],
 };
 

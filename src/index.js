@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
+
+const RenderIframe = () => {
+  const [url, setUrl] = useState("/");
+
+  const onChangeUrl = (newUrl) => {
+    setUrl(newUrl);
+  };
+
+  return (
     <div style={{ width: "auto", height: "100vh", overflow: "hidden" }}>
       <iframe
         style={{ width: "100vw", height: "100vh" }}
-        src="https://www.wcpc.us/"
+        src={`https://www.wcpc.us${url}`}
       />
-
-      <App />
+      <App onChangeUrl={onChangeUrl} />
     </div>
+  );
+};
+
+root.render(
+  <React.StrictMode>
+    <RenderIframe />
   </React.StrictMode>
 );
 

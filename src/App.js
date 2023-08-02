@@ -4,13 +4,15 @@ import MessageParser from "./chatBot/MessageParser";
 import ActionProvider from "./chatBot/ActionProvider";
 import "react-chatbot-kit/build/main.css";
 
-function App() {
+function App({ onChangeUrl }) {
   return (
     <div style={{ position: "absolute", right: 14, bottom: 0 }}>
       <Chatbot
         config={Config}
         messageParser={MessageParser}
-        actionProvider={ActionProvider}
+        actionProvider={(props) => (
+          <ActionProvider {...props} onChangeUrl={onChangeUrl} />
+        )}
       />
     </div>
   );

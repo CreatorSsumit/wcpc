@@ -1,16 +1,33 @@
 import React from "react";
+import { faqQuestion } from "./faqQuestion";
+import { regexMatch } from "./regexMatch";
 
 const ActionProvider = ({
   createChatBotMessage,
   setState,
   children,
+  onChangeUrl,
   ...rest
 }) => {
-  const categoriesList = () => {
-    const message = createChatBotMessage(
-      `How can I help you? Below are some possible options.`,
-      { widget: "categories" }
+  const questionList = (typedMsg) => {
+    var data = [],
+      message = "";
+    const regexMatchasperMessage = Object.keys(regexMatch).filter((e, i) =>
+      typedMsg.match(regexMatch[e])
     );
+
+    regexMatchasperMessage.forEach((event) => {
+      data.push(faqQuestion.find((e) => e.question.match(regexMatch[event])));
+    });
+
+    if (data?.length) {
+      message = createChatBotMessage(`Some possible FAQ`, {
+        widget: "getAllQuestions",
+        payload: data,
+      });
+    } else {
+      message = createChatBotMessage(`Sorry ! I'm not able to Understand`);
+    }
 
     setState((prev) => ({
       ...prev,
@@ -18,30 +35,8 @@ const ActionProvider = ({
     }));
   };
 
-  const categoriesSelection = (data) => {
-    const message = createChatBotMessage(
-      `There is some questions that may releated to ${data?.name}. `,
-      { widget: "filterQuestion", payload: data }
-    );
-
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev?.messages, message],
-      selectedCategories: data?.name,
-    }));
-  };
-
-  const answerSelection = (data) => {
-    console.log(data);
-    const message = createChatBotMessage(
-      `There is Answer of your Questions : - ${data?.name || data?.question}`,
-      { widget: "filterAnswer", payload: data }
-    );
-
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev?.messages, message],
-    }));
+  const questionSelection = (data) => {
+    onChangeUrl(data?.link);
   };
 
   return (
@@ -49,9 +44,8 @@ const ActionProvider = ({
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, {
           actions: {
-            categoriesList,
-            categoriesSelection,
-            answerSelection,
+            questionList,
+            questionSelection,
           },
         });
       })}
