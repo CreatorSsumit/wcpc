@@ -14,9 +14,16 @@ const RenderIframe = () => {
   };
 
   return (
-    <div style={{ width: "auto", height: "100vh", overflow: "hidden" }}>
+    <div
+      style={{
+        width: "auto",
+        height: "100vh",
+        overflow: "hidden",
+        border: "none",
+      }}
+    >
       <iframe
-        style={{ width: "100vw", height: "100vh" }}
+        style={{ width: "100vw", height: "100vh", border: "none" }}
         src={`https://www.wcpc.us${url}`}
       />
       <App onChangeUrl={onChangeUrl} />
