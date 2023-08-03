@@ -7,10 +7,9 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const RenderIframe = () => {
-  const [url, setUrl] = useState("/");
-
   const onChangeUrl = (newUrl) => {
-    setUrl(newUrl);
+    let url = "https://www.wcpc.us" + newUrl;
+    document.getElementById("iframeid").src = url;
   };
 
   return (
@@ -23,8 +22,10 @@ const RenderIframe = () => {
       }}
     >
       <iframe
+        id="iframeid"
         style={{ width: "100vw", height: "100vh", border: "none" }}
-        src={`https://www.wcpc.us${url}`}
+        src={`https://www.wcpc.us`}
+        allowfullscreen
       />
       <App onChangeUrl={onChangeUrl} />
     </div>

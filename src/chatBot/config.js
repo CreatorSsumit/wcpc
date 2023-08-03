@@ -11,10 +11,10 @@ const config = {
   lang: "no",
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "#235789",
     },
     chatButton: {
-      backgroundColor: "#5ccc9d",
+      backgroundColor: "#235789",
     },
   },
 

@@ -23,6 +23,7 @@ function QuestionList({ state, payload, actionProvider, actions, ...rest }) {
                 height: "auto",
                 color: "#2491FF",
                 borderColor: "#2491FF",
+                background: "#E1F0FF",
               }}
               onClick={() => actionProvider?.questionSelection(e)}
             >
