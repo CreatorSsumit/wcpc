@@ -36,7 +36,7 @@ const ActionProvider = ({
   };
 
   const questionSelection = (data) => {
-    onChangeUrl(data?.link);
+    onChangeUrl(data);
   };
 
   return (

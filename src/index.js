@@ -7,8 +7,14 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const RenderIframe = () => {
-  const onChangeUrl = (newUrl) => {
-    let url = "https://www.wcpc.us" + newUrl;
+  const onChangeUrl = (data) => {
+    let url = "https://www.wcpc.us";
+    if (data?.newPageRouteLink) {
+      url = data?.newPageRouteLink;
+    } else {
+      url = url + data?.link;
+    }
+
     document.getElementById("iframeid").src = url;
   };
 
