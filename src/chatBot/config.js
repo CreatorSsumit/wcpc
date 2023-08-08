@@ -3,6 +3,7 @@ import React from "react";
 import { createChatBotMessage, createCustomMessage } from "react-chatbot-kit";
 import QuestionList from "./QuestionList";
 import { faqQuestion } from "./faqQuestion";
+import AnswerList from "./AnswerList";
 
 const botName = "Wayne";
 
@@ -23,6 +24,10 @@ const config = {
     {
       widgetName: "getAllQuestions",
       widgetFunc: (props) => <QuestionList {...props} />,
+    },
+    {
+      widgetName: "getAllAnswer",
+      widgetFunc: (props) => <AnswerList {...props} />,
     },
   ],
   initialMessages: [

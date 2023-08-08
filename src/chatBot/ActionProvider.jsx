@@ -36,7 +36,21 @@ const ActionProvider = ({
   };
 
   const questionSelection = (data) => {
-    onChangeUrl(data);
+    var message = "";
+
+    message = createChatBotMessage(`Some possible Answer`, {
+      widget: "getAllAnswer",
+      payload: data,
+    });
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev?.messages, message],
+    }));
+  };
+
+  const linkRoutes = (url) => {
+    onChangeUrl(url);
   };
 
   return (
@@ -46,6 +60,7 @@ const ActionProvider = ({
           actions: {
             questionList,
             questionSelection,
+            linkRoutes,
           },
         });
       })}
