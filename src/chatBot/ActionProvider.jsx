@@ -17,7 +17,7 @@ const ActionProvider = ({
     );
 
     regexMatchasperMessage.forEach((event) => {
-      data.push(faqQuestion.find((e) => e.question.match(event)));
+      data = faqQuestion.filter((e) => e.question.match(event));
     });
 
     if (data?.length) {
