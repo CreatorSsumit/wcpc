@@ -12,12 +12,12 @@ const ActionProvider = ({
   const questionList = (typedMsg) => {
     var data = [],
       message = "";
-    const regexMatchasperMessage = Object.keys(regexMatch).filter((e, i) =>
-      typedMsg.match(regexMatch[e])
+    const regexMatchasperMessage = regexMatch?.filter((e, i) =>
+      typedMsg.match(e)
     );
 
     regexMatchasperMessage.forEach((event) => {
-      data.push(faqQuestion.find((e) => e.question.match(regexMatch[event])));
+      data.push(faqQuestion.find((e) => e.question.match(event)));
     });
 
     if (data?.length) {

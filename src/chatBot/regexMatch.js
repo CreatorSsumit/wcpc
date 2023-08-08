@@ -1,7 +1,7 @@
-export const regexMatch = {
-  adminclos: /administrative|closing/i,
-  bonds: /bond/i,
-  copyrequest: /copy|copy request/i,
-  wheredoifile: /courtroom|contact|courtroom/i,
-  ePaymentInstructions: /epayment|pay|online|e-payment/i,
-};
+export const regexMatch = [
+  /administrative|closing/i,
+  /bond/i,
+  /copy|copy request/i,
+  /courtroom|contact|courtroom/i,
+  /epayment|pay|online|e-payment/i,
+];
