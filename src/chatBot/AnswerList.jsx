@@ -21,12 +21,7 @@ function AnswerList({ state, payload, actionProvider, actions, ...rest }) {
         >
           {data?.answer}
           <br />
-          <div
-            style={{ color: "#2491FF", cursor: "pointer" }}
-            onClick={() => actionProvider?.linkRoutes(data)}
-          >
-            Read More ...
-          </div>
+          <a href={data?.link}>Read More ...</a>
         </Card>
       </div>
     </div>

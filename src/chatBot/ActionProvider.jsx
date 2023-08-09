@@ -6,7 +6,6 @@ const ActionProvider = ({
   createChatBotMessage,
   setState,
   children,
-  onChangeUrl,
   ...rest
 }) => {
   const questionList = (typedMsg) => {
@@ -49,10 +48,6 @@ const ActionProvider = ({
     }));
   };
 
-  const linkRoutes = (url) => {
-    onChangeUrl(url);
-  };
-
   return (
     <div>
       {React.Children.map(children, (child) => {
@@ -60,7 +55,6 @@ const ActionProvider = ({
           actions: {
             questionList,
             questionSelection,
-            linkRoutes,
           },
         });
       })}
