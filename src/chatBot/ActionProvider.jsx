@@ -2,21 +2,21 @@ import React from "react";
 import { faqQuestion } from "./faqQuestion";
 import { regexMatch } from "./regexMatch";
 
-const ActionProvider = ({
-  createChatBotMessage,
-  setState,
-  children,
-  ...rest
-}) => {
+const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const questionList = (typedMsg) => {
     var data = [],
       message = "";
-    const regexMatchasperMessage = regexMatch?.filter((e, i) =>
-      typedMsg.match(e)
-    );
 
-    regexMatchasperMessage.forEach((event) => {
-      data = faqQuestion.filter((e) => e.question.match(event));
+    data = faqQuestion.filter((e) => {
+      return e?.keywords?.some((e1) => {
+        return typedMsg
+          ?.split(/(\s+)/)
+          ?.filter(function (e) {
+            return e.trim()?.length > 0;
+          })
+          .join(" ")
+          ?.match(e1);
+      });
     });
 
     if (data?.length) {

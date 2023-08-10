@@ -8,6 +8,12 @@ function AnswerList({ state, payload, actionProvider, actions, ...rest }) {
     setData(payload);
   }, [payload]);
 
+  const redirecturl = (e) => {
+    e.preventDefault();
+
+    window.parent.location.href = data?.link || data?.newPageRouteLink;
+  };
+
   return (
     <div style={{ width: "100%", overflow: "hidden" }}>
       <div>
@@ -21,7 +27,14 @@ function AnswerList({ state, payload, actionProvider, actions, ...rest }) {
         >
           {data?.answer}
           <br />
-          <a href={data?.link}>Read More ...</a>
+          {(data?.link || data?.newPageRouteLink) && (
+            <div
+              style={{ color: "#2491ff", cursor: "pointer" }}
+              onClick={redirecturl}
+            >
+              Read More ...
+            </div>
+          )}
         </Card>
       </div>
     </div>
