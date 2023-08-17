@@ -10,8 +10,7 @@ function AnswerList({ state, payload, actionProvider, actions, ...rest }) {
 
   const redirecturl = (e) => {
     e.preventDefault();
-
-    window.parent.location.href = data?.link || data?.newPageRouteLink;
+    window.open(data?.link || data?.newPageRouteLink, "_blank");
   };
 
   return (
