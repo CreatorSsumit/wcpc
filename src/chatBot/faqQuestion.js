@@ -11,7 +11,7 @@ const faqQuestion = [
     link: "http://dev.wcpc.us/FAQ/bonds.htm",
     keywords: [/bond/i],
     answer:
-      "What is a probate bond?    A probate bond is an insurance policy that protects assets and income in an estate, trust, or conservatorship from certain actions of the fiduciary (either the personal presentative, trustee, or conservator, respectively). When would a bond be obtained?   Every fiduciary (whether guardian, conservator, personal representative, etc.) in Probate Court must file an Acceptance of Appointment (“AOA”), PC571, to qualify with the Court before they can start acting in that role. The Court may also order that a fiduciary obtain and file a bond in addition to the AOA.",
+      "What is a probate bond ?\nA probate bond is an insurance policy that protects assets and income in an estate, trust, or conservatorship from certain actions of the fiduciary .",
   },
   {
     question:
@@ -19,14 +19,14 @@ const faqQuestion = [
     link: "http://dev.wcpc.us/FAQ/copyrequest.htm",
     keywords: [/copy request|copy|court file/i],
     answer:
-      "Certified Copy - $11 for the 1st page and $1 for each subsequent page per document,  pursuant to MCL 600.2546    Standard Copy - $2 per page, pursuant to Local Administrative Order 2020-02",
+      "Certified Copy - $11 for the 1st page and $1 for each subsequent page per document,  pursuant to MCL 600.2546 Standard Copy - $2 per page, pursuant to Local Administrative Order 2020-02 .",
   },
   {
     question: "Courtroom Contact: How do I contact a courtroom?",
     link: "http://dev.wcpc.us/wheredoifile.pdf",
     keywords: [/courtroom|contact/i],
     answer:
-      "Documents regarding any of the following items, will only be accepted by email, fax or mail at this time, to the appropriate department at the bottom of the page. Filings submitted by email can only be accepted as a single document for each filing in PDF format",
+      "Documents regarding any of the following items, will only be accepted by email, fax or  mail at this time, to the appropriate department at the bottom of the page. ",
   },
   {
     question:
@@ -34,7 +34,7 @@ const faqQuestion = [
     link: "http://dev.wcpc.us/ePay/ePaymentInstructions.pdf",
     keywords: [/Instructions|e-payment|epayment/i],
     answer:
-      "General Information regarding ePayment:1. ePayment is a web service which allows for the online payment of existing court fees and costs via credit card. 2 ePayment has a 3.5% convenience fee or $3.00 whichever is greater. 3. Wayne County Probate Court utilizes a third party vendor (FivePoint) to process ePayments. ",
+      "General Information regarding ePayment:\n 1. ePayment is a web service which allows for the online payment of existing court fees and costs via credit card.\n 2 ePayment has a 3.5% convenience fee or $3.00 whichever is greater.",
   },
   {
     question:
@@ -42,7 +42,7 @@ const faqQuestion = [
     link: "http://dev.wcpc.us/filing.html#processingDelays",
     keywords: [/Expectations|Authority|certified copy|e-payment|epayment/i],
     answer:
-      "Please be aware that the filing system at Wayne County Probate Court is a manual electronic process, as this Court is not yet a true “e-filing court”.After your filing has been processed, you will receive notice to pay any requisite fees.",
+      "After your filing has been processed, you will receive notice to pay any requisite fees.",
   },
   {
     question:
@@ -50,14 +50,14 @@ const faqQuestion = [
     link: "http://dev.wcpc.us/AttyTrain/miscgovtaddr.pdf",
     keywords: [/government|party|parties|Miscellaneous|Probate/i],
     answer:
-      "MCR 5.125(A)(1) requires that the Michigan Attorney General must be served in specific probate proceedings when the decedent is not survived by any known heirs, or the protected individual has no known presumptive heirs.",
+      "MCR 5.125(A)(1) requires that the Michigan Attorney General must be served in specific probate proceedings when the decedent is not survived by any known heirs .",
   },
   {
     question: "Hearings: How do I attend a Zoom hearing?",
     link: "http://dev.wcpc.us/Info/ZoomNoticeOfHearing.pdf",
     keywords: [/hearing|zoom/i],
     answer:
-      "1.You must identify yourself with the Judge’s clerk when you join the Zoom hearing. 2.If you are connecting using a camera, APPROPRIATE DRESS IS REQUIRED FOR ALL COURT PROCEEDINGS (shorts, tank tops, mini-skirts, cut-off jeans, and clothing with obscene or vulgar wording or pictures are NOT appropriate.)",
+      "1.You must identify yourself with the Judge’s clerk when you join the Zoom hearing.\n 2.If you are connecting using a camera, APPROPRIATE DRESS IS REQUIRED FOR ALL COURT PROCEEDINGS .",
   },
   {
     question:
@@ -65,13 +65,14 @@ const faqQuestion = [
     keywords: [/hearing|filing/i],
     newPageRouteLink: "https://public.wcpc.us/eservices/home.page.2",
     answer:
-      "Important Notice about eAccess Please be advised to allow pop-ups if you are not able to view images within the case. ",
+      "Important Notice about eAccess\n Please be advised to allow pop-ups if you are not able to view images within the case. ",
   },
   {
     question: "Hearings: I didn’t get a hearing notice, how do I access it?",
     keywords: [/hearing|notice/i],
     newPageRouteLink: "https://public.wcpc.us/eservices/home.page.2",
-    answer: "",
+    answer:
+      "Important Notice about eAccess\n Please be advised to allow pop-ups if you are not able to view images within the case.",
   },
   {
     question:
@@ -79,28 +80,28 @@ const faqQuestion = [
     keywords: [/Independent|Evaluator/i],
     link: "http://dev.wcpc.us/Info/ime_evaluatorlist.pdf",
     answer:
-      "LIST OF INDIVIDUALS WHO HAVE EXPRESSED INTEREST IN ACTING AS INDEPENDENT EVALUATOR IN MENTAL HEALTH PROCEEDINGS Dr. Daniel Blake 26711 Woodward Avenue, Suite 309A Huntington Woods, MI 48070 (248) 330-8267 Dsb726@aol.com George Fleming, Ph.D. 615 Griswold St., Suite 925 Detroit, MI 48226 (313) 567-2234 Fax: (313) 567-2817 gpsychdet@comcast.net",
+      "LIST OF INDIVIDUALS WHO HAVE EXPRESSED INTEREST IN ACTING AS INDEPENDENT EVALUATOR IN MENTAL HEALTH PROCEEDINGS\nDr. Daniel Blake\n26711 Woodward Avenue, Suite 309A\nHuntington Woods, MI 48070 \n(248) 330-8267 \nDsb726@aol.com ",
   },
   {
     question: "Interpreters: How do I get an interpreter for my hearing?",
     keywords: [/Interpreter|hearing/i],
     link: "http://dev.wcpc.us/FAQ/Interpreter.htm",
     answer:
-      "Only the petitioner, respondent, and a witness are entitled to an interpreter by right. MCR 1.111(A)(2)&(B)(1). This concept also applies to guardian ad litem (GAL) appointments and guardian reviews.",
+      "Only the petitioner, respondent, and a witness are entitled to an interpreter by right. MCR 1.111(A)(2)&(B)(1). ",
   },
   {
     question: "Jobs: How can I get a job at Wayne County Probate Court?",
     keywords: [/job|Wayne|County/i],
     link: "http://dev.wcpc.us/job.html",
     answer:
-      "Any position(s) currently available and qualifications for the classification posted will be linked to this web page under this section.Click here to see currently available Wayne County Probate Court job opportunities.",
+      "Any position(s) currently available and qualifications for the classification posted will be linked to this web page under this section.\nClick here to see currently available Wayne County Probate Court job opportunities.",
   },
   {
     question: "Legal Aid: Where can I find Legal Aid/Legal Services?",
     keywords: [/Legal|Aid/i],
     link: "http://dev.wcpc.us/Info/LegalAid.pdf",
     answer:
-      "WAYNE COUNTY LEGAL AID - LEGAL SERVICES:WAYNE COUNTY NEIGHBORHOOD LEGAL SERVICES 7310 Woodward Ave., Suite 301 Detroit, MI 48202 313-964-1975 ELDER LAW ADVOCACY CENTER 12121 Hemingway Redford, MI 48239 313-937-8291",
+      "WAYNE COUNTY LEGAL AID - LEGAL SERVICES:\nWAYNE COUNTY NEIGHBORHOOD LEGAL SERVICES\n7310 Woodward Ave., Suite 301\nDetroit, MI 48202 313-964-1975",
   },
   {
     question:
@@ -140,14 +141,14 @@ const faqQuestion = [
     keywords: [/Transcript|appeal/i],
     link: "http://dev.wcpc.us/FAQ/recordsrequest.htm",
     answer:
-      "How can I access probate court records? You may go to the Court’s website, www.wcpc.us, and click on the “Case Access” tab.",
+      "How can I access probate court records?\nYou may go to the Court’s website, www.wcpc.us, and click on the “Case Access” tab.",
   },
   {
     question: "Where do I file: Where do I file documents?Where do I file",
     keywords: [/file|document/i],
     link: "http://dev.wcpc.us/wheredoifile.pdf",
     answer:
-      "Documents regarding any of the following items, will only be accepted by email, fax or mail at this time, to the appropriate department at the bottom of the page. Filings submitted by email can only be accepted as a single document for each filing in PDF format",
+      "Documents regarding any of the following items, will only be accepted by email, fax or mail at this time, to the appropriate department at the bottom of the page. ",
   },
   {
     question:
@@ -162,7 +163,7 @@ const faqQuestion = [
     keywords: [/will filing|submit a will/i],
     link: "http://dev.wcpc.us/WebStandards/Wills.html",
     answer:
-      "An individual’s will (and codicil*(s)) may be deposited with the probate court in the county where that individual resides. Any Wayne County resident may deposit their original will and codicils, if any, for safekeeping with the Wayne County Probate Court.",
+      "An individual’s will (and codicil*(s)) may be deposited with the probate court in the county where that individual resides. ",
   },
   {
     question:
@@ -178,7 +179,7 @@ const faqQuestion = [
     keywords: [/will search|receive a copy/i],
     link: "http://dev.wcpc.us/FAQ/willinquiry.htm",
     answer:
-      "The Court will check to see if a will has been filed for safekeeping when a death certificate is presented (in PDF form, as an attachment, if it's being emailed) to the Court. The death certificate and a written request (please include your email address) may be faxed to (313) 967-4035, emailed to register@wcpc.us",
+      "The Court will check to see if a will has been filed for safekeeping when a death certificate is presented (in PDF form, as an attachment, if it's being emailed) to the Court. ",
   },
   {
     question: "Adoption Records: How do I get access to Adoption records?",
@@ -193,35 +194,33 @@ const faqQuestion = [
     keywords: [/Child Custody Action|Minor Guardianship Proceeding|Custody/i],
     link: "http://dev.wcpc.us/FAQ/childcustodyaction.htm",
     answer:
-      "What is a child custody action? A custody action is brought under the Michigan Child Custody Act, MCL 722.21 et. seq. Custody cases are filed in Circuit Court. What is a minor guardianship proceeding? A minor guardianship proceeding is a case in which a “substitute parent” (i.e., guardian) is sought for a child. Rights of the child’s parents are suspended, but not terminated.Guardianship cases are filed in Probate Court.",
+      "What is a child custody action?\nA custody action is brought under the Michigan Child Custody Act, MCL 722.21 et. seq. Custody cases are filed in Circuit Court.",
   },
   {
     question: "Child Support Questions",
     keywords: [/Child Support Questions|child support/i],
     link: "http://dev.wcpc.us/FAQ/childsupport.htm",
     answer:
-      "Child Support is handled by the Wayne County Friend of the Court. They can be contacted as follows: Phone Number: (313) 224-5300 Address: 324 Penobscot Building, 645 Griswold Detroit , Mich. 48226",
+      "Child Support is handled by the Wayne County Friend of the Court.\nThey can be contacted as follows:\nPhone Number: (313) 224-5300",
   },
   {
     question: "Guardianship/Conservatorship for Adult Questions",
     keywords: [/Guardianship|Conservatorship|Adult Question/i],
     link: "http://dev.wcpc.us/FAQ/adultgc.htm",
-    answer:
-      "Filing Fees Guardianship.............................................. $175.00 Conservatorship..........................................$175.00",
+    answer: "Refer to FAQ in the given link",
   },
   {
     question: "Guardianship/Conservatorship for Minors Questions",
     keywords: [/Guardianship|Conservatorship/i],
     link: "http://dev.wcpc.us/FAQ/minorgc.htm",
-    answer:
-      "Filing Fees Guardianship..............................................$175.00 Conservatorship..........................................$175.00",
+    answer: "Refer to FAQ in the given link",
   },
   {
     question: "Juvenile Court Questions",
     keywords: [/Juvenile|Court Question/i],
     link: "http://dev.wcpc.us/FAQ/juvenile.htm",
     answer:
-      "The Juvenile Court is part of the Family Division of the Wayne County Circuit Court.Juvenile Court handles abuse\neglect cases, delinquency cases, and adoptions.",
+      "The Juvenile Court is part of the Family Division of the Wayne County Circuit Court. Juvenile Court handles abuse eglect cases, delinquency cases, and adoptions .",
   },
   {
     question: "Name Change: How do I obtain a copy of a name change order?",
@@ -235,7 +234,7 @@ const faqQuestion = [
     keywords: [/Attorney question|Attorney/i],
     link: "http://dev.wcpc.us/FAQ/powerofattorney.htm",
     answer:
-      "A Power of Attorney is a written and notarized document giving a person the legal power to act on behalf of another person according to the terms of the Power of Attorney. The Probate Court does not become involved with these types of documents",
+      "A Power of Attorney is a written and notarized document giving a person the legal power to act on behalf of another person according to the terms of the Power of Attorney. ",
   },
   {
     question:
@@ -243,7 +242,7 @@ const faqQuestion = [
     keywords: [/sale|real estate/i],
     link: "http://dev.wcpc.us/FAQ/saleofrealestate.htm",
     answer:
-      "The Court is prohibited by law (Sec. 1211 of the Estates and Protected Individuals Code [EPIC]) from providing legal advice and completing forms. This item provides general information concerning the sale of real estate in decedent’s estates and conservatorships and may be useful as a guide.",
+      "The Court is prohibited by law (Sec. 1211 of the Estates and Protected Individuals Code [EPIC]) from providing legal advice and completing forms. ",
   },
   {
     question:
@@ -251,7 +250,7 @@ const faqQuestion = [
     keywords: [/Settlement|Judgement|Incapacitate/i],
     link: "http://dev.wcpc.us/WebStandards/settlement.html",
     answer:
-      "The Michigan Supreme Court requires the use of MC 95,*Request for Approval of Bond and Notice Settlement/Judgment/Wrongful Death Settlement (MC95) where either (1) in a wrongful death claim where a minor or legally incapacitated individual are to receive distributions in excess of $5,000 or (2) in all settlements and judgments when the plaintiff is a minor or legally incapacitated individual and the value of the settlement or judgment to the minor or legally incapacitated individual is more than $5,000.",
+      "The Michigan Supreme Court requires the use of MC 95,*Request for Approval of Bond and Notice Settlement/Judgment/Wrongful Death Settlement (MC95) .",
   },
   {
     question:
@@ -259,14 +258,14 @@ const faqQuestion = [
     keywords: [/dead|move a body|disinterment|casket|exhumation/i],
     link: "http://dev.wcpc.us/FAQ/deadbodies.htm",
     answer:
-      "The Probate Court has no jurisdiction to have a body moved (i.e., disinterred).You should contact the funeral home that handled the burial to request they file a permit for disinterment with the Wayne County or Detroit Health Department.",
+      "The Probate Court has no jurisdiction to have a body moved (i.e., disinterred).You should contact the funeral home that handled the burial .",
   },
   {
     question:
       "Cost of Living Adjustments: What are the EPIC Cost of Living Adjustments for each year?",
     keywords: [/Cost of Living|epic|Living Adjustments/i],
     link: "http://dev.wcpc.us/Info/EPICCOLA.pdf",
-    answer: "Table is given ",
+    answer: "Refer to table given in link for court adjustment procedures",
   },
   {
     question:
@@ -282,7 +281,7 @@ const faqQuestion = [
     keywords: [/Intestate|without a will|someone die/i],
     link: "http://dev.wcpc.us/FAQ/intestsucc.htm",
     answer:
-      "Based on a 1979 chart for the RPC created by Douglas J. Rasmussen of Clark Hill, PLC Where a Michigan decedent dies without a Will, the decedent’s real and personal property (other than joint property, insurance, etc.) after payment of debts, taxes, family allowance and exempt property",
+      "Where a Michigan decedent dies without a Will, the decedent’s real and personal property (other than joint property, insurance, etc.) after payment of debts, taxes, family allowance and exempt property is distributed to the following.",
   },
   {
     question:
@@ -290,7 +289,7 @@ const faqQuestion = [
     keywords: [/Medical|Medical Record/i],
     link: "http://dev.wcpc.us/FAQ/medicalrecords.htm",
     answer:
-      "A probate estate must be opened to obtain the medical records of a deceased person.A formal Petition for Probate andor Appointment of Personal Representative (TestateIntestate) (PC 559 ) must be filed and include a request that a special personal representative be appointed.",
+      "A formal Petition for Probate andor Appointment of Personal Representative (TestateIntestate) (PC 559 ) must be filed and include a request that a special personal representative be appointed.",
   },
   {
     question:
@@ -315,14 +314,14 @@ const faqQuestion = [
     keywords: [/Motor Vehicle|vehicle be transfer|vehicle transfer/i],
     link: "http://dev.wcpc.us/FAQ/motorvehicle.htm",
     answer:
-      "If a decedent dies with no probate assets (i.e., owns nothing in their name alone) except for one or more motor vehicles whose total value is not more than $60,000, title to the vehicles can be transferred by the Secretary of State without opening an estate in the Probate Court.",
+      "If a decedent dies with no probate assets (i.e., owns nothing in their name alone) except for one or more motor vehicles whose total value is not more than $60,000 .",
   },
   {
     question: "Reopening Decedent's Estate Questions",
     keywords: [/Reopening Decedent|Estate/i],
     link: "http://dev.wcpc.us/FAQ/reopenestate.htm",
     answer:
-      "Note : The Court is prohibited by law (Sec. 1211 of the Estates and Protected Individuals Code [EPIC]) from providing legal advice and completing forms. This item provides general information concerning the opening of a decedent’s estate and may be useful as a guide. If you have any questions, consider contacting an attorney for assistance.",
+      "Michigan law prohibits court employees from providing legal advice and completing forms, petitions, or documents. MCL 700.1211. Click here for a list of legal aidlegal services .",
   },
   {
     question:
@@ -330,7 +329,7 @@ const faqQuestion = [
     keywords: [/sale of real estate Decedent|sell real|Estate/i],
     link: "http://dev.wcpc.us/FAQ/saleofrealestate.htm",
     answer:
-      "Note : The Court is prohibited by law (Sec. 1211 of the Estates and Protected Individuals Code [EPIC]) from providing legal advice and completing forms. This item provides general information concerning the sale of real estate in decedent’s estates and conservatorships and may be useful as a guide. If you have any questions, consider contacting an attorney for assistance.",
+      "Note : The Court is prohibited by law (Sec. 1211 of the Estates and Protected Individuals Code [EPIC]) from providing legal advice and completing forms. ",
   },
   {
     question:
@@ -338,7 +337,7 @@ const faqQuestion = [
     keywords: [/will file|copy of will|i file/i],
     link: "http://dev.wcpc.us/FAQ/obtainingownwill.htm",
     answer:
-      "To withdraw your will, send an email request (with a copy of your photo identification) to probateservice@wcpc.us, or submit this request in written form via mail or drop-box at the court.",
+      "To withdraw your will, send an email request (with a copy of your photo identification) to probateservice@wcpc.us ",
   },
   {
     question:
@@ -359,14 +358,14 @@ const faqQuestion = [
     question: "List of Court Approved Mediators",
     keywords: [/Approved|Mediator|list of court/i],
     link: "http://dev.wcpc.us/Info/mediatorlist.pdf",
-    answer: "",
+    answer: "Refer to table given in link for court approved mediators",
   },
   {
     question: "Mediation Guide - Questions and Answers",
     keywords: [/Mediation/i],
     link: "http://dev.wcpc.us/Info/MediationGuide.pdf",
     answer:
-      "Mediation is a process in which a neutral third party assists communication between interested persons. In addition, the mediator will assist in identifying issues, and help explore solutions to find a settlement that all parties are satisfied with.",
+      "Mediation is a process in which a neutral third party assists communication between interested persons.",
   },
   {
     question: "Mediator Application (MC 281)",
@@ -380,26 +379,26 @@ const faqQuestion = [
     keywords: [/wcpc|adr plan|wcpc plan/i],
     link: "http://dev.wcpc.us/Info/Proposed_WCPC_ADR_Plan_LAO_2022.pdf",
     answer:
-      "This administrative order is issued in accordance with Michigan Court Rule 2.410 Alternative Dispute Resolution, effective August 1, 2000, as amended. The purpose of this order is to adopt the Local Alternative Dispute Resolution Plan incorporated into this Order upon approval by the State Court Administrative Office. ",
+      "This administrative order is issued in accordance with Michigan Court Rule 2.410 Alternative Dispute  Resolution, effective August 1, 2000, as amended. ",
   },
   {
     question: "Mediation Status Report (MC 280) to be completed by Mediator ",
     keywords: [/Mediation status|report 280|280|mc 280|Mediation/i],
     link: "http://dev.wcpc.us/Info/MediationStatusReport.pdf",
-    answer: "Link redireted to table",
+    answer: "Refer to table given in link for Mediation Status Report",
   },
   {
     question: "Site Map",
     keywords: [/site|map|site map/i],
     link: "http://dev.wcpc.us/WebStandards/wcpcsitemap.bmp",
-    answer: "Link redirected to flow diagram",
+    answer: "Refer to flow diagram given in link",
   },
   {
     question: "Privacy Statement Disclaimer",
     keywords: [/Privacy|Disclaimer/i],
     link: "http://dev.wcpc.us/WebStandards/privacydisclaimer.htm",
     answer:
-      "The purpose of this website is to provide accurate and helpful information about the Wayne County Probate Court’s services and related activities. If you visit this site, you agree to these terms and policies. ",
+      "The purpose of this website is to provide accurate and helpful information about the Wayne County Probate Court’s services and related activities.",
   },
   {
     question:
@@ -413,21 +412,22 @@ const faqQuestion = [
     question: "Michigan Legal Help(link:http://www.michiganlegalhelp.org/)",
     keywords: [/Michigan|Legal help/i],
     link: "http://dev.wcpc.us/WebStandards/langaccesscoord.htm",
-    answer: "",
+    answer:
+      "Jennifer Parmalee\nWayne County Probate Court\n1305 Coleman A. Young Municipal Center\nDetroit, Mich. 48226",
   },
   {
     question: "Language Access Plan (LAP) Coordinator Language Access Plan",
     keywords: [/lap|clap/i],
     link: "http://dev.wcpc.us/Info/websitepolicy.pdf",
     answer:
-      "Language Access Coordinator Jennifer Parmalee Wayne County Probate Court 1305 Coleman A. Young Municipal Center Detroit, Mich. 48226 jparmalee@wcpc.us",
+      "Language Access Coordinator\nJennifer Parmalee\nWayne County Probate Court",
   },
   {
     question: "Website Standards and Guidelines",
     keywords: [/Website standard|Guideline/i],
     link: "http://dev.wcpc.us/Info/websitepolicy.pdf",
     answer:
-      "The following person is responsible for oversight of website design and legitimacy of content (Website DesignerContent Coordinator):April K. Maycock Probate Register and Director of Information Services 1305 Coleman A. Young Municipal Center Detroit, Mich. 48226 amaycock@wcpc.us ",
+      "The following person is responsible for oversight of website design and legitimacy of content (Website DesignerContent Coordinator):\nApril K. Maycock Probate Register and Director of Information Services",
   },
 ];
 
