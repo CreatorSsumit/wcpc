@@ -34,7 +34,7 @@ const faqQuestion = [
     link: "http://dev.wcpc.us/ePay/ePaymentInstructions.pdf",
     keywords: [/Instructions|e-payment|epayment/i],
     answer:
-      "General Information regarding ePayment:\n 1. ePayment is a web service which allows for the online payment of existing court fees and costs via credit card.\n 2 ePayment has a 3.5% convenience fee or $3.00 whichever is greater.",
+      "General Information regarding ePayment:\n1. ePayment is a web service which allows for the online payment of existing court fees and costs via credit card.\n2. ePayment has a 3.5% convenience fee or $3.00 whichever is greater.",
   },
   {
     question:
@@ -57,7 +57,7 @@ const faqQuestion = [
     link: "http://dev.wcpc.us/Info/ZoomNoticeOfHearing.pdf",
     keywords: [/hearing|zoom/i],
     answer:
-      "1.You must identify yourself with the Judge’s clerk when you join the Zoom hearing.\n 2.If you are connecting using a camera, APPROPRIATE DRESS IS REQUIRED FOR ALL COURT PROCEEDINGS .",
+      "1.You must identify yourself with the Judge’s clerk when you join the Zoom hearing.\n2.If you are connecting using a camera, APPROPRIATE DRESS IS REQUIRED FOR ALL COURT PROCEEDINGS .",
   },
   {
     question:
@@ -65,14 +65,14 @@ const faqQuestion = [
     keywords: [/hearing|filing/i],
     newPageRouteLink: "https://public.wcpc.us/eservices/home.page.2",
     answer:
-      "Important Notice about eAccess\n Please be advised to allow pop-ups if you are not able to view images within the case. ",
+      "Important Notice about eAccess\nPlease be advised to allow pop-ups if you are not able to view images within the case. ",
   },
   {
     question: "Hearings: I didn’t get a hearing notice, how do I access it?",
     keywords: [/hearing|notice/i],
     newPageRouteLink: "https://public.wcpc.us/eservices/home.page.2",
     answer:
-      "Important Notice about eAccess\n Please be advised to allow pop-ups if you are not able to view images within the case.",
+      "Important Notice about eAccess\nPlease be advised to allow pop-ups if you are not able to view images within the case.",
   },
   {
     question:
