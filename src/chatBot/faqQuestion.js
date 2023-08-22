@@ -62,7 +62,7 @@ const faqQuestion = [
   {
     question:
       "Hearings: When is my hearing? How do I access filings on my case?",
-    keywords: [/hearing|filing/i],
+    keywords: [/hearing|filing|case/i],
     newPageRouteLink: "https://public.wcpc.us/eservices/home.page.2",
     answer:
       "Important Notice about eAccess\nPlease be advised to allow pop-ups if you are not able to view images within the case. ",
@@ -114,7 +114,7 @@ const faqQuestion = [
   {
     question:
       "Letters of Authority - How do I obtain an updated Letter of Authority with a new expiration date?",
-    keywords: [/Legal|expiration|Authority/i],
+    keywords: [/Letter|expiration|Authority/i],
     link: "http://dev.wcpc.us/FAQ/updLOA.htm",
     answer:
       "If your Annual Report (GA/GM case) or Annual Account (CA/CY case) or Notice of Continued Administration (DE case) is due, the court must first receive and process that filing before issuing updated Letters. ",
@@ -122,7 +122,7 @@ const faqQuestion = [
   {
     question:
       "No known Heirs: What is the decedent is not survived by any known heirs? Who do I notify?",
-    keywords: [/Heirs|decedent/i],
+    keywords: [/Heir|decedent/i],
     link: "http://dev.wcpc.us/FAQ/agaddress.htm",
     answer:
       "MCR 5.125(A)(1) requires that the Michigan Attorney General must be served in specific probate proceedings when the decedent is not survived by any known heirs, or the protected individual has no known presumptive heirs.",
@@ -130,7 +130,7 @@ const faqQuestion = [
   {
     question:
       "Notice of Hearing: How do I give Notice of a Hearing to the interested parties on the case? Who do I have to notify?",
-    keywords: [/Heirs|decedent/i],
+    keywords: [/Hearing|decedent/i],
     link: "http://dev.wcpc.us/WebStandards/noticehearing.html",
     answer:
       "As the person who filed a petition in Wayne County Probate Court, you must give Notice of the Hearing to all interested persons. ",
@@ -153,14 +153,14 @@ const faqQuestion = [
   {
     question:
       "Will Copy: How do I obtain a copy of my will that I filed with the court?",
-    keywords: [/copy|filed/i],
+    keywords: [/copy|filed|will copy/i],
     link: "http://dev.wcpc.us/FAQ/obtainingownwill.htm",
     answer:
       "To withdraw your will, send an email request (with a copy of your photo identification) to probateservice@wcpc.us, or submit this request in written form via mail or drop-box at the court.",
   },
   {
     question: "Will Filing: How do I submit a will?",
-    keywords: [/will filing|submit a will/i],
+    keywords: [/will filing|submit a will|submit will/i],
     link: "http://dev.wcpc.us/WebStandards/Wills.html",
     answer:
       "An individual’s will (and codicil*(s)) may be deposited with the probate court in the county where that individual resides. ",
@@ -168,7 +168,7 @@ const faqQuestion = [
   {
     question:
       "Will Advice: How do I create a will, do I need an attorney to create a will?",
-    keywords: [/will advice|create a will/i],
+    keywords: [/will advice|create a will|create will/i],
     link: "http://dev.wcpc.us/FAQ/LegalAdvice.htm",
     answer:
       "Court personnel shall not provide or offer to provide legal advice or legal counsel to a fiduciary or an interested person and shall not complete a form, petition, or document for a fiduciary or interested person.",
@@ -176,14 +176,14 @@ const faqQuestion = [
   {
     question:
       "Will Search: How do I find out if a will is on file for someone else? How do I receive a copy of someone else's will?",
-    keywords: [/will search|receive a copy/i],
+    keywords: [/will search|receive a copy|receive copy/i],
     link: "http://dev.wcpc.us/FAQ/willinquiry.htm",
     answer:
       "The Court will check to see if a will has been filed for safekeeping when a death certificate is presented (in PDF form, as an attachment, if it's being emailed) to the Court. ",
   },
   {
     question: "Adoption Records: How do I get access to Adoption records?",
-    keywords: [/Adoption Record/i],
+    keywords: [/Adoption Record|Adoption/i],
     link: "http://dev.wcpc.us/FAQ/adoptionrecords.htm",
     answer:
       "Probate Court does not have adoption records.You must contact the Adoptions Unit, which is part of the Juvenile Section of the Family Division of the Wayne County Circuit Court.",
@@ -191,21 +191,23 @@ const faqQuestion = [
   {
     question:
       "Child Custody Action and Minor Guardianship Proceeding, what is the difference?",
-    keywords: [/Child Custody Action|Minor Guardianship Proceeding|Custody/i],
+    keywords: [
+      /Child Custody Action|Minor Guardianship Proceeding|Custody|Guardianship/i,
+    ],
     link: "http://dev.wcpc.us/FAQ/childcustodyaction.htm",
     answer:
       "What is a child custody action?\nA custody action is brought under the Michigan Child Custody Act, MCL 722.21 et. seq. Custody cases are filed in Circuit Court.",
   },
   {
     question: "Child Support Questions",
-    keywords: [/Child Support Questions|child support/i],
+    keywords: [/Child Support Questions|child support|support/i],
     link: "http://dev.wcpc.us/FAQ/childsupport.htm",
     answer:
       "Child Support is handled by the Wayne County Friend of the Court.\nThey can be contacted as follows:\nPhone Number: (313) 224-5300",
   },
   {
     question: "Guardianship/Conservatorship for Adult Questions",
-    keywords: [/Guardianship|Conservatorship|Adult Question/i],
+    keywords: [/Guardianship|Conservatorship|Adult Question|adult/i],
     link: "http://dev.wcpc.us/FAQ/adultgc.htm",
     answer: "Refer to FAQ in the given link",
   },
@@ -270,7 +272,9 @@ const faqQuestion = [
   {
     question:
       "Tax Exemption: What are the Federal Estate Tax Exemption Amounts?",
-    keywords: [/Tax Exemption|Federal|Estate Tax Exemption|Exemption Amount/i],
+    keywords: [
+      /Tax Exemption|Federal|Estate Tax Exemption|Exemption Amount|tax/i,
+    ],
     link: "http://dev.wcpc.us/FAQ/taxamt.htm",
     answer:
       "The Economic Growth and Tax Relief Reconciliation Act of 2001 (EGTRRA) increased the unified credit, i.e. the amount of a decedent’s assets which are exempt from federal estate tax. ",
@@ -297,7 +301,7 @@ const faqQuestion = [
     keywords: [/Michigan|Administrator/i],
     newPageRouteLink:
       "https://www.michigan.gov/ag/-/media/Project/Websites/AG/public-administrator/CPA-LIST-July-14-2023.pdf?rev=cf2ae81d33394a058f905c6ea26d80a9&hash=D13AB9B0E51D5AA64E5CB580CD6AC69A",
-    answer: "Link is not working giving 404",
+    answer: "Refer to the given in link for Michigan Public Administrators",
   },
 
   {
@@ -311,14 +315,16 @@ const faqQuestion = [
   {
     question:
       "Motor Vehicles: How can a vehicle be transferred out of the decedent's name?",
-    keywords: [/Motor Vehicle|vehicle be transfer|vehicle transfer/i],
+    keywords: [
+      /Motor Vehicle|vehicle be transfer|vehicle transfer|motor|vehicle/i,
+    ],
     link: "http://dev.wcpc.us/FAQ/motorvehicle.htm",
     answer:
       "If a decedent dies with no probate assets (i.e., owns nothing in their name alone) except for one or more motor vehicles whose total value is not more than $60,000 .",
   },
   {
     question: "Reopening Decedent's Estate Questions",
-    keywords: [/Reopening Decedent|Estate/i],
+    keywords: [/Reopening Decedent|Reopening/i],
     link: "http://dev.wcpc.us/FAQ/reopenestate.htm",
     answer:
       "Michigan law prohibits court employees from providing legal advice and completing forms, petitions, or documents. MCL 700.1211. Click here for a list of legal aidlegal services .",
@@ -326,7 +332,7 @@ const faqQuestion = [
   {
     question:
       "Sale of Real Estate: What is the process to sell real estate in a Probate case?",
-    keywords: [/sale of real estate Decedent|sell real|Estate/i],
+    keywords: [/sale of real estate Decedent|sell real|sale|real estate/i],
     link: "http://dev.wcpc.us/FAQ/saleofrealestate.htm",
     answer:
       "Note : The Court is prohibited by law (Sec. 1211 of the Estates and Protected Individuals Code [EPIC]) from providing legal advice and completing forms. ",
@@ -372,7 +378,7 @@ const faqQuestion = [
     keywords: [/Mediator|Mediator Application|mc 281|281/i],
     newPageRouteLink:
       "https://www.courts.michigan.gov/siteassets/forms/scao-approved/mc281a.pdf",
-    answer: "link is not working does not have acesss",
+    answer: "Refer to  given in link for Mediator Application",
   },
   {
     question: "WCPC ADR Plan",
@@ -401,15 +407,14 @@ const faqQuestion = [
       "The purpose of this website is to provide accurate and helpful information about the Wayne County Probate Court’s services and related activities.",
   },
   {
-    question:
-      "SCAO Language Access Information (link: http://courts.mi.gov/self-help/interpreter/pages/default.aspx)",
-    keywords: [/scap|self help|slai/i],
+    question: "SCAO Language Access Information",
+    keywords: [/scap|self help|slai|scap|scao|Language|Language Access Plan/i],
     newPageRouteLink:
       "http://courts.mi.gov/self-help/interpreter/pages/default.aspx",
-    answer: "link is not working does not have acesss",
+    answer: "Refer to given in link for SCAO Language Access Information",
   },
   {
-    question: "Michigan Legal Help(link:http://www.michiganlegalhelp.org/)",
+    question: "Michigan Legal Help",
     keywords: [/Michigan|Legal help/i],
     link: "http://dev.wcpc.us/WebStandards/langaccesscoord.htm",
     answer:
@@ -417,7 +422,7 @@ const faqQuestion = [
   },
   {
     question: "Language Access Plan (LAP) Coordinator Language Access Plan",
-    keywords: [/lap|clap/i],
+    keywords: [/lap|clap|Language|Language Access Plan/i],
     link: "http://dev.wcpc.us/Info/websitepolicy.pdf",
     answer:
       "Language Access Coordinator\nJennifer Parmalee\nWayne County Probate Court",
