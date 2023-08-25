@@ -2,7 +2,12 @@ import React from "react";
 import { faqQuestion } from "./faqQuestion";
 import { regexMatch } from "./regexMatch";
 
-const ActionProvider = ({ createChatBotMessage, setState, children }) => {
+const ActionProvider = ({
+  createChatBotMessage,
+  setState,
+  children,
+  saveMessages,
+}) => {
   const questionList = (typedMsg) => {
     var data = [],
       message = "";
@@ -28,10 +33,13 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       message = createChatBotMessage(`Sorry ! I'm not able to Understand`);
     }
 
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev?.messages, message],
-    }));
+    setState((prev) => {
+      saveMessages([...prev?.messages, message]);
+      return {
+        ...prev,
+        messages: [...prev?.messages, message],
+      };
+    });
   };
 
   const questionSelection = (data) => {
@@ -42,10 +50,13 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       payload: data,
     });
 
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev?.messages, message],
-    }));
+    setState((prev) => {
+      saveMessages([...prev?.messages, message]);
+      return {
+        ...prev,
+        messages: [...prev?.messages, message],
+      };
+    });
   };
 
   return (
