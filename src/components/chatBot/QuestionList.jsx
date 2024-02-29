@@ -23,7 +23,7 @@ function QuestionList({ state, payload, actionProvider, actions, ...rest }) {
       {faqQuestion?.map((e, i) => {
         return (
           <div key={i}>
-               {(e?.answer||e?.scripted_value) && <div key={i} style={{  overflow: "hidden" }}>
+               {(e?.answer||e?.scripted_value) && (e?.link || e?.newPageRouteLink||e?.anchor_link ) && <div key={i} style={{  overflow: "hidden" }}>
          <Card
           className="answercard"
           style={{
@@ -34,11 +34,30 @@ function QuestionList({ state, payload, actionProvider, actions, ...rest }) {
             background:'#e8eff7'
           }}
         >
-          {(e?.answer||e?.scripted_value)}
+          <div>{(e?.answer||e?.scripted_value)}</div>
+          {(e?.link || e?.newPageRouteLink||e?.anchor_link ) &&   <Button
+              type="dashed"
+              size="middle"
+              style={{
+                marginTop: 10,
+                whiteSpace: "pre-wrap",
+                overflowWrap: "break-word",
+                height: "auto",
+                color: "#2491FF",
+                borderColor: "#2491FF",
+                background: "#E1F0FF",
+              }}
+              onClick={() => 
+                redirecturl(e)
+                // actionProvider?.questionSelection(e)
+              }
+            >
+              {e?.question||e?.anchor_text}
+            </Button>}
         </Card>
         </div>}
 
-          {(e?.link || e?.newPageRouteLink||e?.anchor_link ) &&   <Button
+          {(e?.link || e?.newPageRouteLink||e?.anchor_link ) && !(e?.answer||e?.scripted_value) &&   <Button
               type="dashed"
               size="middle"
               style={{
