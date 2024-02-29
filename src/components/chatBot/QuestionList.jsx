@@ -23,7 +23,7 @@ function QuestionList({ state, payload, actionProvider, actions, ...rest }) {
       {faqQuestion?.map((e, i) => {
         return (
           <div key={i}>
-               {e?.answer && <div key={i} style={{  overflow: "hidden" }}>
+               {(e?.answer||e?.scripted_value) && <div key={i} style={{  overflow: "hidden" }}>
          <Card
           className="answercard"
           style={{
@@ -34,7 +34,7 @@ function QuestionList({ state, payload, actionProvider, actions, ...rest }) {
             background:'#e8eff7'
           }}
         >
-          {e?.answer}
+          {(e?.answer||e?.scripted_value)}
         </Card>
         </div>}
 

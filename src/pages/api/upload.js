@@ -57,7 +57,7 @@ export default async function handler(req, res) {
         "anchor_text": data.question,
         "anchor_link": data.link,
         "parent_url": data.link,
-        "scripted_value": ""
+        "scripted_value": data.answer||"",
      }).then(e=>{
       if(e&&e.data){
         res.json({ message: 'Data appended to the Bert local file successfully.' });

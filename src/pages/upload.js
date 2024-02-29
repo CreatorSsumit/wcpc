@@ -31,7 +31,8 @@ const UploadData = () => {
      data =  {
         "question": values.question,
         "link": values.link,
-        "type":values.type
+        "type":values.type,
+        "answer":values.answer||""
         }
     }
 
@@ -101,8 +102,6 @@ const UploadData = () => {
     
         <Form.Item
           name="link"
-          noStyle
-          rules={[{ required: true, message: 'link is required' }]}
         >
           <Input style={{ width: '100vh' }} placeholder="Please input link" />
         </Form.Item>
@@ -115,10 +114,9 @@ const UploadData = () => {
         <Form.Item
           name='keyword1'
           mode="tags"
-          noStyle
-          rules={[{ required: true, message: 'first level keywords is required' }]}
+          required={false}
         >
-           <Select mode="tags"  style={{ width: '100%' }} placeholder="First Level Keywords"/>
+           <Select mode="tags"    style={{ width: '100%' }} placeholder="First Level Keywords"/>
    
         </Form.Item>
         </Form.Item>
@@ -128,18 +126,25 @@ const UploadData = () => {
         <Form.Item
           name='keyword2'
           mode="tags"
-          noStyle
-          rules={[{ required: true, message: 'second level keywords is required' }]}
+          required={false}
           
           
         >
-           <Select mode="tags" style={{ width: '100%' }} placeholder="Second Level Keywords"/>
+           <Select mode="tags"   style={{ width: '100%' }} placeholder="Second Level Keywords"/>
+
         </Form.Item>
         </Form.Item>
         </Col>
         </Row>
     </Form.Item>}
+    <Form.Item label="answer">
+        <Form.Item
+          name='answer'
+        >
+           <Input  style={{ width: '100%' }} placeholder="Enter Answer"/>
    
+        </Form.Item>
+        </Form.Item>
     <Form.Item>
       <Button type="primary" htmlType="submit">
         Submit
