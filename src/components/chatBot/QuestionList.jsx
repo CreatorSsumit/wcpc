@@ -35,7 +35,8 @@ function QuestionList({ state, payload, actionProvider, actions, ...rest }) {
           }}
         >
           {e?.answer}
-        </Card></div>}
+        </Card>
+        </div>}
 
           {(e?.link || e?.newPageRouteLink||e?.anchor_link ) &&   <Button
               type="dashed"
