@@ -114,9 +114,10 @@ const UploadData = () => {
         <Form.Item
           name='keyword1'
           mode="tags"
-          required={false}
+          noStyle
+          rules={[{ required: true, message: 'first level keywords is required' }]}
         >
-           <Select mode="tags"    style={{ width: '100%' }} placeholder="First Level Keywords"/>
+           <Select mode="tags"  style={{ width: '100%' }} placeholder="First Level Keywords"/>
    
         </Form.Item>
         </Form.Item>
@@ -126,12 +127,12 @@ const UploadData = () => {
         <Form.Item
           name='keyword2'
           mode="tags"
-          required={false}
+          noStyle
+          rules={[{ required: true, message: 'second level keywords is required' }]}
           
           
         >
-           <Select mode="tags"   style={{ width: '100%' }} placeholder="Second Level Keywords"/>
-
+           <Select mode="tags" style={{ width: '100%' }} placeholder="Second Level Keywords"/>
         </Form.Item>
         </Form.Item>
         </Col>
