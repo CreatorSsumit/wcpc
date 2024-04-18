@@ -86,8 +86,7 @@ if (!fs.existsSync(filePath)) {
   }else{
       data = nonReleventList.pop();
  }
-
-
+ 
  const saveFilesFormat = (data)=>{
   var str = `${formattedDate},${currentTime} -- `
 
