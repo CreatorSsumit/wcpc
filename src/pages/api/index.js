@@ -79,7 +79,6 @@ if (!fs.existsSync(filePath)) {
       }else{
        nonReleventList.push([])
       }
-     
    }
 
    if(greetingList?.length){
