@@ -53,7 +53,7 @@ export default async function handler(req, res) {
       res.status(500).json({ error: 'Internal Server Error' });
     }
   }else{
-    axios.post(`http://127.0.0.1:5000/upload`,{
+    axios.post(`http://chatbotpy.netlink.com/upload`,{
         "anchor_text": data.question,
         "anchor_link": data.link,
         "parent_url": data.link,

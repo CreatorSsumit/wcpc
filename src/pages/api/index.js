@@ -79,6 +79,7 @@ if (!fs.existsSync(filePath)) {
       }else{
        nonReleventList.push([])
       }
+     
    }
 
    if(greetingList?.length){
@@ -86,7 +87,8 @@ if (!fs.existsSync(filePath)) {
   }else{
       data = nonReleventList.pop();
  }
- 
+
+
  const saveFilesFormat = (data)=>{
   var str = `${formattedDate},${currentTime} -- `
 
@@ -107,7 +109,7 @@ if (!fs.existsSync(filePath)) {
   }else{
 
 
-    axios.get(`http://127.0.0.1:5000/get?msg=${typedMsg}`).then(e=>{
+    axios.get(`http://chatbotpy.netlink.com/get?msg=${typedMsg}`).then(e=>{
       if(e.data && e.data.data.length){
         saveFilesFormat(e.data.data)
       }else{
